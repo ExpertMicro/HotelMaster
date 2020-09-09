@@ -1,0 +1,59 @@
+/* Geral */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+.header {
+  padding: 30px 0;
+}
+
+.container {
+  display: flex;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.header .container .menu-nav {
+  flex: 1;
+  align-self: center;
+}
+
+.header .container .menu-nav ul {
+  display: flex;
+  float: right;
+}
+
+.header .menu-nav li + li {
+  margin-left: 40px;
+}
+
+.header .menu-nav ul li a {
+  font-size: 1.125em;
+  color: #111;
+}
+
+/* Main */
+.intro {
+	background: url('../img/rio-de-janeiro-main.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	padding-top: 400px;
+}
+
+.intro .container-intro {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.intro .container-intro .intro-title h1 {
+  font-size: 3em;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.intro .container-intro .suites {
+  display: flex;
+}
