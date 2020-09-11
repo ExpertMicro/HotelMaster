@@ -11,7 +11,7 @@ body {
 
 .container {
   display: flex;
-  max-width: 1060px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
@@ -39,11 +39,10 @@ body {
 	background: url('../img/rio-de-janeiro-main.jpg') no-repeat center center;
 	background-size: cover;
 	color: #fff;
-	padding-top: 400px;
 }
 
 .intro .container-intro {
-  max-width: 1060px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
@@ -52,8 +51,25 @@ body {
   color: #fff;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+  margin-bottom: 30px;
+  padding-top: 330px;
 }
 
+/* formulário main */
+.intro .container-intro .card-form {
+  background: #fff;
+  border-radius: 5px;
+  padding: 14px 0px 20px 20px;
+}
+
+.intro .container-intro .card-form .form {
+  display: flex;
+  font-size: 1.125em;
+  color: #111;
+}
+
+/* main suites */
 .intro .container-intro .suites {
   display: flex;
+  margin-top: 80px;
 }
