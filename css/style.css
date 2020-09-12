@@ -35,10 +35,10 @@ body {
 }
 
 /* Main */
-.intro {
-	background: url('../img/rio-de-janeiro-main.jpg') no-repeat center center;
-	background-size: cover;
-	color: #fff;
+.intro .background-intro {
+  background: url('../img/rio-de-janeiro-main.jpg') no-repeat center center;
+  background-size: cover;
+  padding-bottom: 120px;
 }
 
 .intro .container-intro {
@@ -53,6 +53,7 @@ body {
   font-weight: 700;
   margin-bottom: 30px;
   padding-top: 330px;
+  line-height: 1.4em;
 }
 
 /* formulário main */
@@ -68,8 +69,18 @@ body {
   color: #111;
 }
 
-/* main suites */
-.intro .container-intro .suites {
-  display: flex;
-  margin-top: 80px;
+.intro .container-intro .card-form .form .quartos select {
+  display: block;
 }
+
+.intro .container-intro .card-form .form .hospedes select {
+  display: block;
+}
+
+/* main suites */
+.intro .suites {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
