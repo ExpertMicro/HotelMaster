@@ -69,6 +69,22 @@ body {
   color: #111;
 }
 
+.intro .container-intro .card-form .form input {
+  color: #111;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.intro .container-intro .card-form .form select {
+  color: #111;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.intro .container-intro .card-form .form .data-check {
+ float: right;
+}
+
 .intro .container-intro .card-form .form .quartos select {
   display: block;
 }
@@ -84,3 +100,100 @@ body {
   margin-top: -40px;
 }
 
+.intro .suites .suite-master {
+  background-image: url(../img/master-suite.jpg);
+}
+
+.intro .suites .suite-mini {
+  background-image: url(../img/mini-suite.jpg);
+}
+
+.intro .suites .suite-king {
+  background-image: url(../img/king-suite.jpg);
+}
+
+.intro .suites .suite-master {
+  width: 350px;
+  height: 360px;
+}
+
+.intro .suites .suite-mini {
+  width: 350px;
+  height: 360px;
+}
+
+.intro .suites .suite-king {
+  width: 350px;
+  height: 360px;
+}
+
+.intro .suites h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 240px;
+  padding: 30px 0px 0px 20px;
+}
+
+.intro .suites p {
+  font-size: 1.125em;
+  color: #fff;
+  margin-top: 1.25em;
+  padding: 0px 0px 20px 20px;
+}
+
+.intro .suites .suite-master .bg-black {
+  background: rgba(0, 0, 0, 0.8);
+  width: 260px;
+  margin-left: 30px;
+}
+.intro .suites .suite-mini .bg-black {
+  background: rgba(0, 0, 0, 0.8);
+  width: 260px;
+  margin-left: 30px;
+}
+.intro .suites .suite-king .bg-black {
+  background: rgba(0, 0, 0, 0.8);
+  width: 260px;
+  margin-left: 30px;
+}
+
+.intro .link-salas {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.intro .link-salas a {
+  color: #111; 
+}
+
+/* Section descriçao */
+.intro .container .hotel-descricao .titulo-sessao {
+  font-size: 2.25em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 190px;
+}
+
+.intro .container .hotel-descricao h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+}
+
+.intro .container .hotel-descricao .p-descricao {
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.intro .container .hotel-descricao .p1 {
+  margin-top: 30px;
+}
+
+.intro .container .hotel-descricao .p2 {
+  margin-top: 15px;
+}
