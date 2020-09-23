@@ -258,28 +258,113 @@ body {
 .intro .area-local {
   background: #F3F3F4;
   margin-top: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 160px;
 }
 
 
 .intro .area-local .container .area-local-esquerda {
-  width: 48%;
-  float: left;
   padding-top: 240px;
   padding-bottom: 100px;
   margin-right: 30px;
 }
 
 .intro .area-local .container .area-local-direita {
-  width: 52%;
-  float: left;
   padding-top: 80px;
-  display: flex;
 }
 
-.intro .area-local .container .area-local-direita .area-local-img-cristo {
+.intro .area-local .container .area-local-direita .area-local-flex  .area-local-img-cristo {
   margin-right: 30px;
 }
 
-.intro .area-local .container .area-local-direita .area-local-texto {
-  flex-wrap: wrap;
+.intro .area-local .container .area-local-direita .area-local-flex {
+  display: flex;
+}
+
+.intro .area-local .container .area-local-texto {
+  margin-top: 40px;
+}
+
+.intro .area-local .container .area-local-texto .area-local-p1 {
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.intro .area-local .container h2 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.intro .area-local .container .area-local-texto .area-local-p2 {
+  font-size: 1.125em;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+.intro .area-local .container .button {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #111;
+  border-radius: 5px;
+  padding: 10px 32px 10px 32px;
+  margin-top: 15px;
+}
+
+.intro .area-local .container .button a {
+  font-size: 1.375em;
+  color: #111;
+  font-weight: 300;
+}
+
+/* Section do  Instagram */
+
+.instagram .container-carousel {
+  margin: 0 auto;
+  max-width: 1050px;
+}
+.instagram .container-carousel .instagram-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.instagram .container-carousel .instagram-content .instagram-t1 {
+  font-size: 1.375em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.instagram .container-carousel .instagram-content .instagram-t2 {
+  font-size: 2.25em;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+}
+
+.instagram .container-carousel .instagram-slider {
+  margin-top: 40px;
+}
+
+.instagram .container-carousel .instagram-slider .arrow {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: 70% auto;
+  cursor: pointer;
+}
+
+#arrow-prev {
+  background-image: url(../img/arrow-left.svg);
+  margin-left: -45px;
+  margin-top: -140px;
+}
+#arrow-next {
+  background-image: url(../img/arrow-right.svg);
+  margin-left: 1050px;
+  margin-top: -30px;
+
 }
