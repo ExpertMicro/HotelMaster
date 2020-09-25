@@ -42,6 +42,9 @@ body {
 }
 
 /* Main */
+.intro {
+  margin-bottom: 280px;
+}
 .intro .background-intro {
   background: url('../img/rio-de-janeiro-main.jpg') no-repeat center center;
   background-size: cover;
@@ -368,3 +371,93 @@ body {
   margin-top: -30px;
 
 }
+
+/* Footer */
+.footer .footer-top .footer-social-nav {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer .footer-top .footer-social-nav li + li {
+  margin-left: 20px;
+}
+
+.footer .footer-top .footer-social-nav li p {
+  font-size: 1.125em;
+  text-transform: uppercase;
+}
+
+.footer .footer-outer {
+  background: #1F1F1F;
+  margin-top: 20px;
+}
+
+.footer .footer-outer .footer-main {
+  justify-content: space-between;
+}
+
+.footer .footer-outer .footer-main .footer-contato {
+  padding: 60px 0;
+}
+
+.footer .footer-outer .footer-main .footer-sobre {
+  padding: 80px 0;
+}
+
+.footer .footer-outer .footer-main .footer-negocios {
+  padding: 80px 0;
+}
+
+.footer .footer-outer .footer-main .footer-contato ul li a {
+  font-size: 2.25em;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .footer-outer .footer-main .footer-contato ul li p {
+  color: #fff;
+  font-size: 0.875em;
+  margin-bottom: 15px;
+  line-height: 1.5em;
+}
+
+.footer .footer-outer .footer-main .footer-contato ul li h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer .footer-outer .footer-main .footer-sobre ul li h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer .footer-outer .footer-main .footer-sobre ul li a {
+  color: #fff;
+  font-size: 0.875em;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer .footer-outer .footer-main .footer-negocios h3 {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer .footer-outer .footer-main .footer-negocios ul li a {
+  color: #fff;
+  font-size: 0.875em;
+  display: block;
+  margin-bottom: 15px;
+}
+
