@@ -13,13 +13,11 @@ body {
 /* Header */
 
 .header {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
-.container {
+.header .flex-header {
   display: flex;
-  max-width: 1050px;
-  margin: 0 auto;
 }
 
 .header .container .menu-nav {
@@ -27,12 +25,13 @@ body {
   align-self: center;
 }
 
+
 .header .container .menu-nav ul {
-  display: flex;
   float: right;
+  display: flex;
 }
 
-.header .menu-nav li + li {
+.header .container .menu-nav li + li {
   margin-left: 40px;
 }
 
@@ -51,12 +50,7 @@ body {
   padding-bottom: 120px;
 }
 
-.intro .container-intro {
-  max-width: 1050px;
-  margin: 0 auto;
-}
-
-.intro .container-intro .intro-title h1 {
+.intro .container .intro-title h1 {
   font-size: 3em;
   color: #fff;
   font-family: 'Playfair Display', serif;
@@ -67,40 +61,118 @@ body {
 }
 
 /* formulário main */
-.intro .container-intro .card-form {
+.booking-form {
   background: #fff;
-  border-radius: 5px;
-  padding: 14px 0px 20px 20px;
+  border-radius: 2px;
 }
 
-.intro .container-intro .card-form .form {
-  display: flex;
-  font-size: 1.125em;
-  color: #111;
+.booking-form>form .row.no-margin {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
-.intro .container-intro .card-form .form input {
-  color: #111;
-  font-weight: 300;
-  margin-top: 10px;
+.booking-form>form .row.no-margin>[class*="col-"] {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
-.intro .container-intro .card-form .form select {
-  color: #111;
-  font-weight: 300;
-  margin-top: 10px;
+.booking-form .form-group {
+  position: relative;
+  padding: 25px;
+  margin-bottom: 0px;
 }
 
-.intro .container-intro .card-form .form .data-check {
- float: right;
+/*.booking-form .form-group:after {
+  content: '';
+  background: rgba(129, 131, 144, 0.15);
+  position: absolute;
+  top: 25px;
+  bottom: 0;
+  right: 0px;
+  width: 2px;
+  height: 75px;
+}*/
+
+.booking-form .form-control {
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid #DDDEDA;
+  height: 50px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 20px;
+  color: #222;
+  font-weight: 400;
+  padding: 10px;
+  outline: none;
 }
 
-.intro .container-intro .card-form .form .quartos select {
+.booking-form .form-control::-webkit-input-placeholder {
+  color: #818390;
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+  color: #818390;
+}
+
+.booking-form .form-control::placeholder {
+  color: #818390;
+}
+
+.booking-form input[type="date"].form-control:invalid {
+  color: #818390;
+}
+
+.booking-form select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+  width: 32px;
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+  pointer-events: none;
+  color: #818390;
+  font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+  content: '\279C';
   display: block;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.intro .container-intro .card-form .form .hospedes select {
+.booking-form .form-label {
+  color: #00A69A;
   display: block;
+  font-weight: 400;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.booking-form .form-btn {
+  padding: 25px;
+}
+
+.booking-form .submit-btn {
+  background: #00A69A;
+  border: none;
+  text-transform: capitalize;
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+  height: 75px;
+  font-size: 1.375em;
+  font-weight: 400;
+  color: #fff;
 }
 
 /* main suites */
@@ -108,10 +180,12 @@ body {
   display: flex;
   justify-content: center;
   margin-top: -40px;
+  border-radius: 2px;
 }
 
 .intro .suites .suite-master {
   background-image: url(../img/master-suite.jpg);
+  border-radius: 2px;
 }
 
 .intro .suites .suite-mini {
@@ -120,6 +194,7 @@ body {
 
 .intro .suites .suite-king {
   background-image: url(../img/king-suite.jpg);
+  border-radius: 2px;
 }
 
 .intro .suites .suite-master {
@@ -142,7 +217,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-weight: 500;
-  margin-top: 240px;
+  margin-top: 220px;
   padding: 30px 0px 0px 20px;
 }
 
@@ -157,26 +232,32 @@ body {
   background: rgba(0, 0, 0, 0.8);
   width: 260px;
   margin-left: 30px;
+  border-radius: 2px;
 }
 .intro .suites .suite-mini .bg-black {
   background: rgba(0, 0, 0, 0.8);
   width: 260px;
   margin-left: 30px;
+  border-radius: 2px;
 }
 .intro .suites .suite-king .bg-black {
   background: rgba(0, 0, 0, 0.8);
   width: 260px;
   margin-left: 30px;
+  border-radius: 2px;
 }
 
 .intro .link-salas {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 20px;
+  text-align: center;
 }
 
 .intro .link-salas a {
   color: #111; 
+}
+
+.intro .link-salas a:after {
+  content: '\279C';
 }
 
 /* Section descriçao */
@@ -261,9 +342,11 @@ body {
 .intro .area-local {
   background: #F3F3F4;
   margin-top: 180px;
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 160px;
+}
+
+.intro .area-local .area-flex {
+  display: flex;
 }
 
 
@@ -275,10 +358,6 @@ body {
 
 .intro .area-local .container .area-local-direita {
   padding-top: 80px;
-}
-
-.intro .area-local .container .area-local-direita .area-local-flex  .area-local-img-cristo {
-  margin-right: 30px;
 }
 
 .intro .area-local .container .area-local-direita .area-local-flex {
@@ -375,7 +454,7 @@ body {
 /* Footer */
 .footer .footer-top .footer-social-nav {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
 }
 
 .footer .footer-top .footer-social-nav li + li {
@@ -393,6 +472,7 @@ body {
 }
 
 .footer .footer-outer .footer-main {
+  display: flex;
   justify-content: space-between;
 }
 

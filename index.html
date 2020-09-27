@@ -6,17 +6,20 @@
   <title>Hotel Master</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <a href="">
-        <img src="img/HotelMaster..svg" alt="Hotel Master Logo">
-      </a>
-
+    <div class="container flex-header">
+      <div class="logo">
+        <a href="">
+          <img src="img/HotelMaster..svg" alt="Hotel Master Logo">
+        </a>
+      </div>
+      
       <nav class="menu-nav">
         <ul>
           <li><a href="">Home</a></li>
@@ -32,72 +35,60 @@
 
   <main class="intro">
     <div class="background-intro">
-      <div class="container-intro">
+      <div class="container">
         <div class="intro-title">
           <h1>Espaço luxuoso que você pode pagar<br>onde os sonhos se tornam realidade</h1>
         </div>
 
-        <div class="card-form">
-          <form action="" class="form">
-            <div class="localizacao">
-              <div class="label-localizacao">
-                <label for="">Localização</label>
-              </div>
-              <select name="" id="">
-                <option value="">Rio de Janeiro</option>
-                <option value="">São Paulo</option>
-                <option value="">Brasilia</option>
-                <option value="">Rio Grande do Sul</option>
-                <option value="">Minas Gerais</option>
-              </select>
-            </div>
-
-            <div class="data-check">
-              <div class="label-check">
-                <label for="">Check in - Check out</label>
-              </div>
-              <input type="date"> 
-              -
-              <input type="date">
-            </div>
-
-            <div class="quartos">
-              <div class="label-quartos">
-                <label for="">Quartos</label>
-                <select name="" id="">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="hospedes">
-              <div class="label-hospedes">
-                <label for="">Hópedes</label>
-                <select name="" id="">
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
-                  <option value="">5</option>
-                  <option value="">6</option>
-                  <option value="">7</option>
-                  <option value="">8</option>
-                  <option value="">9</option>
-                  <option value="">10</option>
-                </select>
+        <div class="section-center">
+          <div class="container">
+            <div class="row">
+              <div class="booking-form">
+                <form>
+                  <div class="row no-margin">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <span class="form-label">Destination</span>
+                        <input class="form-control" type="text" placeholder="Country, ZIP, city...">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row no-margin">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <span class="form-label">Check In</span>
+                            <input class="form-control" type="date" required>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <span class="form-label">Check out</span>
+                            <input class="form-control" type="date" required>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-group">
+                            <span class="form-label">Guests</span>
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-btn">
+                        <button class="submit-btn">Check availability</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-
-            <button>Reservar</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -129,11 +120,10 @@
         </div>
       </div>
     </div>
-
     <div class="container link-salas">
       <a href="">Todas as Salas </a>
     </div>
-    
+
 
     <section class="container">
       <div class="hotel-descricao">
@@ -166,44 +156,65 @@
 
     <section class="area-local">
       <div class="container">
-
-        <div class="area-local-esquerda">
-          <a href="">
-            <img src="img/rio-de-janeiro-praia1.jpg" alt="Praia Rio de Janeiro">
-          </a>
-        </div>
-
-        <div class="area-local-direita">
-          <div class="area-local-flex">
-            <a href="" class="area-local-img-cristo">
-              <img src="img/rio-de-janeiro-cristo.jpg" alt="Rio de Janeiro Cristo">
-            </a>
-            <a href="" class="area-local-img-praia">
-              <img src="img/rio-de-janeiro-praia2.jpg" alt="Rio de Janeiro Praia">
-            </a>
-          </div>
-          
-
-          <div class="area-local-texto">
-            <p class="area-local-p1">Nossa Localização</p>
-            <h2>
-              Explore o Rio   
-            </h2>
-            <p class="area-local-p2">Proximidade com todas as lojas, passeios turísticos, restaurantes e entretenimento de classe mundial que você possa desejar</p>
-          </div>
-
-          <div class="button">
+        <div class="area-flex">
+          <div class="area-local-esquerda">
             <a href="">
-              Explorar a área local
+              <img src="img/rio-de-janeiro-praia1.jpg" alt="Praia Rio de Janeiro">
             </a>
           </div>
-        </div>
-        
+  
+          <div class="area-local-direita">
+            <div class="area-local-flex">
+              <div class="slide slide-1" style="width: 260px; height: 320px; margin-right: 30px;">
+                <div>
+                  <a href="" class="area-local-img-cristo">
+                    <img src="img/rio-de-janeiro-cristo.jpg" alt="Rio de Janeiro Cristo">
+                  </a>
+                </div>
+                  
+                <div>
+                  <a href="" class="area-local-img-praia">
+                    <img src="img/rio-de-janeiro-praia2.jpg" alt="Rio de Janeiro Praia">
+                  </a>
+                </div>
+              </div>
+
+              <div class="slide" style="width: 260px; height: 320px;">
+                <div>
+                  <a href="">
+                    <img src="img/rio-de-janeiro-vista-de-cima.jpg" alt="Rio de Janeiro">
+                  </a>
+                </div>
+                  
+                <div>
+                  <a href="">
+                    <img src="img/rio-de-janeiro-surf.jpg" alt="Rio de Janeiro Surf">
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+  
+            <div class="area-local-texto">
+              <p class="area-local-p1">Nossa Localização</p>
+              <h2>
+                Explore o Rio   
+              </h2>
+              <p class="area-local-p2">Proximidade com todas as lojas, passeios turísticos, restaurantes e entretenimento de classe mundial que você possa desejar</p>
+            </div>
+  
+            <div class="button">
+              <a href="">
+                Explorar a área local
+              </a>
+            </div>
+          </div>
+        </div>     
       </div>
     </section>
 
     <section class="instagram">
-      <div class="container-carousel">
+      <div class="container container-carousel">
         <div class="instagram-content">
           <h2 class="instagram-t1">#Hotel Master no Instagram</h2>
           <p class="instagram-t2">Descubra o Rio de Janeiro Conosco</p>
