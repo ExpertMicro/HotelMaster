@@ -541,3 +541,65 @@ body {
   margin-bottom: 15px;
 }
 
+
+@media (max-width: 992px) {
+  .header .container .menu-nav li+li {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    display: none;
+  }
+}
+
+/* Mobile styles */
+.mobile-container {
+  margin: auto;
+  background-color: #555;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: #00A69A;
+  padding: 18px 18px;
+  text-decoration: none;
+  font-size: 1.125em;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #fff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*.topnav a:hover {
+  background-color: #333;
+  color: #fff;
+}*/
+
+.active {
+  background-color: #fff;
+  color: white;
+}
