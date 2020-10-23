@@ -6,346 +6,39 @@
   <title>Hotel Master</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container flex-header">
-      <div class="logo">
-        <a href="">
-          <img src="img/HotelMaster..svg" alt="Hotel Master Logo">
-        </a>
+  <div class="header-banner">
+    <div class="header-banner-container">
+      <div class="site-global-link">
+        <a href="">Site Global</a>
       </div>
       
-      <nav class="menu-nav">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Salas</a></li>
-          <li><a href="">Jantar</a></li>
-          <li><a href="">Contato</a></li>
-          <li><a href="">Inscrever</a></li>
-          <li><a href="">Logar</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <div class="mobile-container">
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-      <a href="#home" class="active">
-        <img src="img/HotelMaster..svg" alt="Hotel Master Logo">
-      </a>
-      <div id="myLinks">
-        <a href="#home">Home</a>
-        <a href="#salas">Salas</a>
-        <a href="#jantar">Jantar</a>
-        <a href="#contato">Contato</a>
-        <a href="#logar">Logar</a>
+      <div id="myDropdownContainer" class="dropdown">
+        <a id="myDropdownIcon" onclick="myFunction()" class="dropbtn dropdown-icons">Idiomas</a>
+        <div id="myDropdown" class="dropdown-content">
+          <ul>
+            <li><a href="#">Italiano</a></li>
+            <li><a href="#">Espãnol</a></li>
+            <li><a href="#">Turkçe</a></li>
+            <li><a href="#">Français</a></li>
+            <li><a href="#">Deutsch</a></li>
+          </ul>  
+        </div>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <!--<i class="fa fa-bars"></i>-->
-        <img class="button-hamburger" src="img/bars-solid.svg" alt="Button hamburger">
-      </a>
-    </div>   
-    <!-- End smartphone / tablet look -->
+
+      <div class="login">
+        <a class="login-icon" href="">Login</a>
+      </div>
+    </div>
   </div>
-
-  <main class="intro">
-    <div class="background-intro">
-      <div class="container">
-        <div class="intro-title">
-          <h1>Espaço luxuoso que você pode pagar<br>onde os sonhos se tornam realidade</h1>
-        </div>
-
-        <div class="section-center">
-          <div class="container">
-            <div class="row">
-              <div class="booking-form">
-                <form>
-                  <div class="row no-margin">
-                    <div class="col-md-3">
-                      <div class="form-group">
-                        <span class="form-label">Destination</span>
-                        <input class="form-control" type="text" placeholder="Country, ZIP, city...">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="row no-margin">
-                        <div class="col-md-5">
-                          <div class="form-group">
-                            <span class="form-label">Check In</span>
-                            <input class="form-control" type="date" required>
-                          </div>
-                        </div>
-                        <div class="col-md-5">
-                          <div class="form-group">
-                            <span class="form-label">Check out</span>
-                            <input class="form-control" type="date" required>
-                          </div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-group">
-                            <span class="form-label">Guests</span>
-                            <select class="form-control">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                            </select>
-                            <span class="select-arrow"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-btn">
-                        <button class="submit-btn">Check availability</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="suites">
-      <div class="suite-master">
-        <div class="bg-black">
-          <div class="name-suite">
-            <h3>Master-Suite</h3>
-            <p>R$ 300,00 / noite</p>
-          </div>
-        </div>
-        
-      </div>
-      <div class="suite-mini">
-        <div class="bg-black">
-          <div class="name-suite">
-            <h3>Mini-Suite</h3>
-            <p>R$ 300,00 / noite</p>
-          </div>
-        </div>  
-      </div>
-      <div class="suite-king">
-        <div class="bg-black">
-          <div class="name-suite">
-            <h3>King-Suite</h3>
-            <p>R$ 300,00 / noite</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container link-salas">
-      <a href="">Todas as Salas </a>
-    </div>
-
-
-    <section class="container">
-      <div class="hotel-descricao">
-        <p class="titulo-sessao">Estadia Inteligente</p>
-        <h2>No Coração do Rio de Janeiro</h2>
-        <p class="p-descricao p1">Construído durante os loucos anos 20, o Hotel Master já acomodou e entreteve muitas figuras influentes - incluindo Jackie Gleason, Mae West e até a primeira-dama Eleanor Roosevelt. Os hóspedes de hoje desfrutam da serenidade de nosso hotel e de nossa localização perto do Neblon e de outros marcos e pontos turísticos do Rio.</p>
-
-        <p class="p-descricao p2">Os quartos dispõem de camas confortáveis, móveis elegantes de madeira e uma ampla variedade de comodidades, incluindo TVs HD de 46 polegadas. O Park Central Hotel oferece acomodações em conformidade com a ADA em todas as categorias de quartos. Para obter mais informações, consulte nossa  Declaração de Acessibilidade.</p>
-      </div>
-    </section>
-
-    <section class="section-ofertas">
-      <h2>Ofertar Especiais</h2>
-      <div class="ofertas">
-        <div class="card card-oferta-01">
-          <div class="bg-dark-oferta">
-            <p class="desconto">Até 30% de desconto</p>
-            <p class="titulo-oferta">Descubra Lugares incrivéis</p>
-          </div>
-        </div>
-        
-        <div class="card card-oferta-02">
-          <div class="bg-dark-oferta">
-            <p class="desconto">Até 30% de desconto</p>
-            <p class="titulo-oferta">Descubra Lugares incrivéis</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="area-local">
-      <div class="container">
-        <div class="area-flex">
-          <div class="area-local-esquerda">
-            <a href="">
-              <img src="img/rio-de-janeiro-praia1.jpg" alt="Praia Rio de Janeiro">
-            </a>
-          </div>
   
-          <div class="area-local-direita">
-            <div class="area-local-flex">
-              <div class="slide slide-1" style="width: 260px; height: 320px; margin-right: 30px;">
-                <div>
-                  <a href="" class="area-local-img-cristo">
-                    <img src="img/rio-de-janeiro-cristo.jpg" alt="Rio de Janeiro Cristo">
-                  </a>
-                </div>
-                  
-                <div>
-                  <a href="" class="area-local-img-praia">
-                    <img src="img/rio-de-janeiro-praia2.jpg" alt="Rio de Janeiro Praia">
-                  </a>
-                </div>
-              </div>
-
-              <div class="slide" style="width: 260px; height: 320px;">
-                <div>
-                  <a href="">
-                    <img src="img/rio-de-janeiro-vista-de-cima.jpg" alt="Rio de Janeiro">
-                  </a>
-                </div>
-                  
-                <div>
-                  <a href="">
-                    <img src="img/rio-de-janeiro-surf.jpg" alt="Rio de Janeiro Surf">
-                  </a>
-                </div>
-              </div>
-            </div>
-            
   
-            <div class="area-local-texto">
-              <p class="area-local-p1">Nossa Localização</p>
-              <h2>
-                Explore o Rio   
-              </h2>
-              <p class="area-local-p2">Proximidade com todas as lojas, passeios turísticos, restaurantes e entretenimento de classe mundial que você possa desejar</p>
-            </div>
-  
-            <div class="button">
-              <a href="">
-                Explorar a área local
-              </a>
-            </div>
-          </div>
-        </div>     
-      </div>
-    </section>
-
-    <section class="instagram">
-      <div class="container container-carousel">
-        <div class="instagram-content">
-          <h2 class="instagram-t1">#Hotel Master no Instagram</h2>
-          <p class="instagram-t2">Descubra o Rio de Janeiro Conosco</p>
-        </div>
-
-        <div class="instagram-slider">    
-          <div class="carousel">
-            <div class="carousel-img">
-              <img src="img/rio-barco.jpg" alt="Barco">
-            </div>
-            <div>
-              <img src="img/rio-bar.jpg" alt="Bar">
-            </div>
-            <div>
-              <img src="img/rio-banana.jpg" alt="Banana">
-            </div>
-            <div>
-              <img src="img/rio-praia.jpg" alt="Praia">
-            </div>
-            <div>
-              <img src="img/rio-hotel.jpg" alt="Hotel">
-            </div>
-            <div>
-              <img src="img/rio-praia-2.jpg" alt="Praia">
-            </div>
-            <div>
-              <img src="img/rio-cristo.jpg" alt="Praia">
-            </div>
-            <div>
-              <img src="img/rio-rua.jpg" alt="Praia">
-            </div>
-          </div>
-
-          <div id="arrow-prev" class="arrow"></div>
-          <div id="arrow-next" class="arrow"></div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer">
-      <div class="container footer-top">
-        <ul class="footer-social-nav">
-          <li>
-            <p>Social</p>
-          </li>
-          <li class="facebook">
-            <a alt="Facebook Link" href="#">
-              <img src="img/facebook.svg" alt="Facebook">
-            </a>
-          </li>
-          <li class="twitter">
-            <a alt="Twitter Link" href="#">
-              <img src="img/twitter.svg" alt="Twitter">
-            </a>
-          </li>
-          <li class="youtube">
-            <a alt="Youtube Link" href="#">
-              <img src="img/youtube.svg" alt="Youtube">
-            </a>
-          </li>
-          <li class="instagram">
-            <a alt="Instagram Link" href="#">
-              <img src="img/instagram.svg" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-outer">
-        <div class="container footer-main">
-          <div class="footer-contato">
-            <ul>
-              <li><a href="">HotelMaster.</a></li>
-              <li><p>Avenida Atlântica 1702, Rio de Janeiro,<br>CEP 22021 001, Brasil</p></li>
-              <li><h3>Fale Conosco</h3></li>
-              <li><p>Reservas:(21) 9999-9999</p></li>
-              <li><p>Telefone: + 55 21 2525-2525</p></li>
-              <li><p>Email: reservas@master.com</p></li>
-            </ul>
-          </div>
-
-          <div class="footer-sobre">
-            <ul>
-              <li><h3>Explore nosso mundo</h3></li>
-              <li><a href="">Fale conosco</a></li>
-              <li><a href="">Ache-nos</a></li>
-              <li><a href="">Cartão presente</a></li>
-              <li><a href="">Privacidade e cookies</a></li>
-              <li><a href="">Termos e condições</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-negocios">
-            <ul>
-              <li><h3>Junte-se a nossa família</h3></li>
-              <li><a href="">Profissionais de viagens</a></li>
-              <li><a href="">Planejadores de eventos</a></li>
-              <li><a href="">Central de imprensa</a></li>
-              <li><a href="">Desenvolvimento</a></li>
-              <li><a href="">Investidores</a></li>
-              <li><a href="">Carreiras</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 
 <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>

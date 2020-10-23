@@ -1,33 +1,32 @@
-$(function() {
-  $('.carousel').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    prevArrow: $('#arrow-prev'),
-    nextArrow: $('#arrow-next'),
-  });
-
-  $('.slide').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    fade: true,
-    slidesToShow: 1,
-    arrows: false,
-    slide: 'div',
-    cssEase: 'linear'
-});
-
-})
-
+ // Dropdown
 function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myDropdownIcon").classList.toggle("open");
 }
+/*
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+  let open = false;
+  let div = document.getElementById('myDropdownIcon');
+  div.addEventListener('click', function() {
+    if(open) {
+      icon.className = 'dropdown-icons';
+    }
+    else {
+      icon.className = 'dropdown-icons open';
+    }
+    open = !open;
+  });
+}*/
+
+
 
