@@ -1,15 +1,9 @@
 /* Geral */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Top do header */
+/* Header banner */
 .header-banner {
   background: #254443;
 }
@@ -146,4 +140,45 @@ body {
   position: relative;
   margin-left: 10px;
   vertical-align: middle;
+}
+
+/* Header */
+.header-container {
+  background: #1B2728;
+  padding: 25px 0;
+}
+
+.header-container .header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header-container .container .logo a {
+  display: block;
+}
+
+.header-container .container .menu-nav {
+  flex: 1;
+}
+
+.header-container .container .menu-nav ul {
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+.header-container .container .menu-nav a {
+  text-decoration: none;
+  font-size: 1.125em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header-container .container .menu-nav li + li {
+  margin-left: 50px;
+}
+
+.main .intro-background {
+  background: url(../img/rio-de-janeiro-background.jpg) no-repeat center center;
+  background-size: cover;
 }
