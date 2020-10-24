@@ -182,3 +182,73 @@ body {
   background: url(../img/rio-de-janeiro-background.jpg) no-repeat center center;
   background-size: cover;
 }
+
+#mini-slide-info {
+  background-color: #EE4433;
+}
+
+.main .intro-background .slide-info {
+  width: 310px;
+  top: 160px;
+  bottom: auto;
+  margin-left: 44px;
+}
+
+.main .intro-background .slide-info .slick-list a {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  padding: 11px 0;
+  text-align: center;
+}
+
+.main .intro-background .slide-info .slick-prev::before, .slick-next::before  {
+  content: '';
+  width: 32px;
+  height: 34px;
+  position: relative;
+  display: block;
+  background-image: url('../img/arrow-right.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main .intro-background .slide-info .slick-prev::before {
+  transform: rotate(180deg);
+}
+
+.main .intro-background .slide-info .slick-prev {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  background: #EE4433;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.main .intro-background .slide-info .slick-next {
+  margin-left: 310px;
+  margin-top: -36px;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  background: #EE4433;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.main .intro-background .slide-info .slick-next:hover {
+  background-color: #A52C20;
+}
+
+.main .intro-background .slide-info .slick-prev:hover {
+  background-color: #A52C20;
+}

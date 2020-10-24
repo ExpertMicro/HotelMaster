@@ -3,6 +3,17 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("myDropdownIcon").classList.toggle("open");
 }
+
+$('.slick-list').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '.slick-prev',
+  nextArrow: '.slick-next'
+});
+
+
+
+
 /*
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
