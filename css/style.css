@@ -1,6 +1,24 @@
 /* Geral */
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  padding: 0px 40px 0px 0px;
+  background-image: url(../img/seta-baixo.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: right center;
 }
 
 /* Header banner */
@@ -181,6 +199,7 @@ body {
 .main .intro-background {
   background: url(../img/rio-de-janeiro-background.jpg) no-repeat center center;
   background-size: cover;
+  background-position: center;
 }
 
 #mini-slide-info {
@@ -189,9 +208,8 @@ body {
 
 .main .intro-background .slide-info {
   width: 310px;
-  top: 160px;
-  bottom: auto;
   margin-left: 44px;
+  display: block;
 }
 
 .main .intro-background .slide-info .slick-list a {
@@ -252,3 +270,149 @@ body {
 .main .intro-background .slide-info .slick-prev:hover {
   background-color: #A52C20;
 }
+
+.main .intro-background .intro-title {
+  font-size: 5em;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  margin-top: 260px;
+  padding-bottom: 181px;
+}
+
+
+/* Estilização do formulario */
+.container-card-contato {
+  position: absolute;
+  right: 5%;
+  top: 36%;
+  width: 420px;
+  background: rgba(37, 68, 67, .8);
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-card-contato .card-contato {
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.container-card-contato .card-contato .logo {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.container-card-contato .card-contato .form .form-group {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.container-card-contato .card-contato .form .group-1 {
+  margin-bottom: 15px;
+}
+
+.container-card-contato .card-contato .form .group-2 {
+  margin-bottom: 15px;
+}
+
+.container-card-contato .card-contato .form .group-3 {
+  margin-bottom: 15px;
+}
+
+.container-card-contato .card-contato .form-group label {
+  color: #E9EEFC;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.container-card-contato .card-contato .form-group select {
+  background: transparent;
+  border: none;
+  margin-left: 5px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+
+.container-card-contato .card-contato .form-group option {
+  background: #254443;
+}
+
+.container-card-contato .card-contato .form-group input {
+  font-family: 'Playfair Display', serif;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-left: 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../img/calendar-2.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+}
+
+.container-card-contato .card-contato .form .especial {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-card-contato .card-contato .form .especial a {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.buttom {
+  position: absolute;
+  right: 5%;
+  top: 81%;
+}
+
+.btn {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 420px;
+  color: #fff;
+  background: #EE4433;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.garantia {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.garantia a {
+  color: #EE4433;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+/* Introdução / História */
+.intro-descricao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+
