@@ -161,6 +161,12 @@ select {
 }
 
 /* Header */
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .header-container {
   background: #1B2728;
   padding: 25px 0;
@@ -271,26 +277,29 @@ select {
   background-color: #A52C20;
 }
 
-.main .intro-background .intro-title {
+.flex-intro {
+  display: flex;
+}
+
+.main .intro-background .intro-title h1 {
   font-size: 5em;
   color: #fff;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
   margin-top: 260px;
-  padding-bottom: 181px;
 }
 
 
 /* Estilização do formulario */
 .container-card-contato {
-  position: absolute;
-  right: 5%;
-  top: 36%;
   width: 420px;
+  flex-shrink: 0;
+  flex-basis: 420px;
   background: rgba(37, 68, 67, .8);
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 44px;
 }
 
 .container-card-contato .card-contato {
@@ -325,6 +334,7 @@ select {
   color: #E9EEFC;
   font-style: italic;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .container-card-contato .card-contato .form-group select {
@@ -372,9 +382,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .buttom {
-  position: absolute;
-  right: 5%;
-  top: 81%;
+ display: flex;
+ justify-content: flex-end;
+ flex-direction: column;
+ align-items: flex-end;
 }
 
 .btn {
@@ -390,27 +401,97 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-.garantia {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 12px;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-}
-
-.garantia a {
-  color: #EE4433;
-  margin-left: 10px;
-  margin-top: 3px;
-}
 
 /* Introdução / História */
 .intro-descricao {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
 }
 
+.intro-historia {
+  margin-left: 100px;
+}
+
+.intro-sub-titulo {
+  font-size: 24px;
+  font-style: italic;
+  color: #414C4D;
+}
+
+.intro-titulo {
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  color: #1B2728;
+  margin-top: 10px;
+}
+
+.tabela-intro {
+  font-size: 14px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tabela-intro td {
+  border: 1px solid #898989;
+}
+
+.tab-endereco {
+  display: flex;
+}
+
+.tab-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 50px;
+}
+
+.span-link {
+  color: #A52C20;
+  margin-left: 10px;
+}
+
+.span-link:hover {
+  color: #898989;
+
+}
+
+.span-color {
+  color: #A52C20;
+}
+
+.my-span {
+  margin-left: 10px;
+}
+
+.intro-sobre {
+  margin-top: 90px;
+}
+
+.sub-titulo-sobre {
+  font-size: 18px;
+  color: #1B2728;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.titulo-sobre {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #1B2728;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.paragrafo-sobre {
+  font-size: 18px;
+  color: #323A3A;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 30px;
+}
 
 
 
