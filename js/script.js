@@ -11,6 +11,13 @@ $('.slick-list').slick({
   nextArrow: '.slick-next'
 });
 
+$('.carousel-instagram').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: '.instagram-prev',
+  nextArrow: '.instagram-next'
+});
+
 
 
 
