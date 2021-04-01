@@ -5,6 +5,10 @@
   -webkit-box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -493,6 +497,130 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   line-height: 30px;
 }
 
+/*  Inicio sessão Salas */
+.sessao-salas {
+  margin-top: 160px;
+  background: #254443;
+}
+
+.titulo-salas {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.titulo-salas::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  margin: 10px auto;
+}
+
+.grid-salas {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sala-01 {
+  margin-right: 30px;
+  flex-basis: 0;
+}
+
+.sala-02 {
+  flex-basis: 0;
+}
+
+.sala-descricao {
+  background: #fff;
+}
+
+.titulo-master {
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  color: #1B2728;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.titulo-master::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #1B2728;
+  margin: 7px auto;
+}
+
+.paragrafo-master {
+  font-size: 14px;
+  text-align: center;
+  color: #323A3A;
+  margin-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sala-icones {
+  margin-top: 20px;
+}
+
+.sala-icones ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul-icones {
+  display: flex;
+  justify-content: center;
+}
+
+.icone-02 {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bg-circulo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #64615F;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.icon-cama {
+  margin-top: 9px;
+  margin-left: 7px;
+}
+
+.icon-pessoa {
+  margin-top: 8px;
+  margin-left: 9px;
+}
+
+.icon-cadeirante {
+  margin-top: 9px;
+  margin-left: 9px;
+}
+
+.span-salas {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+}
 
 
 
