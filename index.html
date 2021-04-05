@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/libs/glide/glide.core.min.css">
+  <link rel="stylesheet" href="js/libs/glide/glide.theme.min.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -56,20 +58,33 @@
 
   <main class="main">
     <div class="intro-background">
-      <div id="mini-slide-info" class="slide-info">
 
-        <button type="button" class="slick-prev"></button>
+      <div class="slide-info glide-info">
 
-        <div class="slick-list">
-          <div><a href="">Informações sobre o covid-19</a></div>
-          <div><a href="">Casamentos e enventos sociais</a></div>
-          <div><a href="">Resumo do Hotel</a></div>
-          <div><a href="">Nossos clientes</a></div>
+        <div class="glide__track" data-glide-el="track">
+
+          <div class="glide__slides">
+
+            <div><a href="#">Informações sobre o covid-19</a></div>
+            <div><a href="#">Casamentos e enventos sociais</a></div>
+            <div><a href="#">Resumo do Hotel</a></div>
+            <div><a href="#">Nossos clientes</a></div>
+
+          </div>
+
+        </div>  
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img src="img/arrow-left.svg" alt="seta esquerda">
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img src="img/arrow-right.svg" alt="seta esquerda">
+          </button>
         </div>
 
-        <button type="button" class="slick-next"></button>
-
       </div>
+
       <div class="container flex-intro">
         <div class="container intro-title">
           <h1>Rio de Janeiro</h1>
@@ -130,8 +145,36 @@
     
 
     <div class="container intro-descricao">
-      <div class="intro-imagem">
-        <img src="img/praia.jpg" alt="Praia">
+      <div class="intro-imagem carousel-intro">
+
+        <div class="glide__track" data-glide-el="track">
+
+          <div class="glide__slides">
+            <div>
+              <img src="img/praia-rio-de-janeiro-01.jpg" alt="Praia Rio de Janeiro">
+            </div>
+            <div>
+              <img src="img/praia-rio-de-janeiro-02.jpg" alt="Praia Rio de Janeiro">
+            </div>
+            <div>
+              <img src="img/cristo-01.jpg" alt="Praia Rio de Janeiro">
+            </div>
+            <div>
+              <img src="img/cristo-02.jpg" alt="Praia Rio de Janeiro">
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img src="img/arrow-left.svg" alt="seta esquerda">
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img src="img/arrow-right.svg" alt="seta esquerda">
+          </button>
+        </div>
+
       </div>
       <div class="intro-historia">
         <h2 class="intro-sub-titulo">Entregue se ao</h2>
@@ -448,29 +491,48 @@
       <h2 class="fan">Você é um fan?</h2>
       <h3 class="hash-instagram">#hotalmasterriodejaneiro</h3>
       <p class="p-instagram">Discover our destinations through the eyes of our guests. Share your experience with <span class="span-instagram">#ImAFan</span> and mention <span class="span-instagram">@hotelmaster</span>  for a chance to be featured.</p>
-      <h4 class="galeria-instagram">Ver galeria de convidados</h4>
-      
-      <div class="carousel">
+      <a href="#" class="link-galeria-instagram">Ver galeria de convidados</a>
 
-        <div class="carousel-instagram">
+      <div class="container-carousel glide">
 
-          <button type="button" class="instagram-prev"></button>
+        <div class="glide__track" data-glide-el="track">
 
-          <div class="slide">
-            <img src="img/instagram-01.jpg" alt="Praia Rio de Janeiro">
+          <div class="glide__slides">
+
+            <div class="slide" style="width: 280px;">
+              <img src="img/instagram-001.jpg" alt="Praia Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-002.jpg" alt="Cristo Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-003.jpg" alt="Piscina Hotel Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-004.jpg" alt="Sobremesa Hotel Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-005.jpg" alt="Sobremesa Hotel Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-006.jpg" alt="Sobremesa Hotel Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-007.jpg" alt="Sobremesa Hotel Rio de Janeiro">
+            </div>
+            <div class="slide"  style="width: 280px;">
+              <img src="img/instagram-08.jpg" alt="Sobremesa Hotel Rio de Janeiro">
+            </div>
           </div>
-          <div class="slide">
-            <img src="img/instagram-02.jpg" alt="Cristo Rio de Janeiro">
-          </div>
-          <div class="slide">
-            <img src="img/instagram-03.jpg" alt="Piscina Hotel Rio de Janeiro">
-          </div>
-          <div class="slide">
-            <img src="img/instagram-04.jpg" alt="Sobremesa Hotel Rio de Janeiro">
-          </div>
+        </div>
 
-          <button type="button" class="instagram-next"></button>
-
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img src="img/arrow-left.svg" alt="seta esquerda">
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img src="img/arrow-right.svg" alt="seta esquerda">
+          </button>
         </div>
 
       </div>
@@ -478,10 +540,135 @@
   </section>
   
   
+  <section class="chamada-contato">
+    <h3>Fique Conosco</h3>
+
+    <div class="button-contato">
+      <a href="#" class="btn-contato">Reserve um quarto</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container my-footer">
+      <div class="endereco-footer">
+        <a href="#">
+          <img src="img/logo.svg" alt="">
+        </a>
+        <h3>Hotel Master Rio de Janeiro</h3>
+        <p>Avenida Atlântica 1702, Rio de Janeiro, CEP 222021, Brasil +55 (21) 2548 70 70 | hotelmaster@gmail.com</p>
+      </div>
+
+      <div class="social-footer">
+        <p>Fale conosco</p>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/icon-facebook.png" alt="Facebook">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/icon-twitter.png" alt="Twitter">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/icon-instagram.png" alt="Instagram">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/icon-youtube.png" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-mapa-site">
+        <ul class="footer-mapa">
+          <li>
+            <a href="#">Fale Conosco</a>
+          </li>
+
+          <li>
+            <a href="#">Meu Pefil</a>
+          </li>
+
+          <li>
+            <a href="#">Garantia de melhor tarifa</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">Quem somos</a>
+          </li>
+
+          <li>
+            <a href="#">Sala de imprensa</a>
+          </li>
+
+          <li>
+            <a href="#">Carreiras</a>
+          </li>
+
+          <li>
+            <a href="#">Residences</a>
+          </li>
+
+          <li>
+            <a href="#">Vale presentes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copy">
+      <p>2020 © Hotel Master Grupo limitado</p>
+    </div>
+  </footer>
   
 </body>
 
 <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
-<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/libs/glide/glide.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
+
+<script>
+    const config = {
+      type: 'carousel',
+      gap: 40,
+      perView: 4,
+      breakpoints: {
+        1550: {
+          perView: 3
+        },
+        1160: {
+          perView: 4
+        },
+        599: {
+          perView: 1
+        }
+      }
+    }
+
+    const config2 = {
+    type: 'carousel',
+    perView: 1,
+  }
+
+  const config3 = {
+    type: 'carousel',
+    perView: 1,
+    gap: 0,
+  }
+  
+    new Glide('.glide', config).mount()
+    new Glide('.glide-info', config2).mount()
+    new Glide('.carousel-intro', config3).mount()
+</script>
+
 </html>

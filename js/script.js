@@ -1,22 +1,9 @@
  // Dropdown
-function myFunction() {
+/*function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("myDropdownIcon").classList.toggle("open");
-}
+}*/
 
-$('.slick-list').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevArrow: '.slick-prev',
-  nextArrow: '.slick-next'
-});
-
-$('.carousel-instagram').slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  prevArrow: '.instagram-prev',
-  nextArrow: '.instagram-next'
-});
 
 
 
