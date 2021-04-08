@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="js/libs/glide/glide.core.min.css">
   <link rel="stylesheet" href="js/libs/glide/glide.theme.min.css">
 
@@ -195,9 +196,9 @@
 
               <td>
                 <div class="tab-container">
-                  <img src="img/icon-telefone.png" alt="Icon telefone">
+                  <img src="img/icon-tempo.svg" alt="Icon telefone">
                   <span class="my-span">Telefone</span>
-                  <span>+(212) 805 8800</span>
+                  <span class="my-span-2">+(212) 805 8800</span>
                 </div>
               </td>
             </tr>
@@ -207,7 +208,7 @@
                 <div class="tab-container">
                   <img src="img/icon-relogio.png" alt="Icon relogio">
                   <span class="my-span">Horário local</span>
-                  <span>13:24 edt</span>
+                  <span class="my-span-2">13:24 edt</span>
                 </div>
               </td>
 
@@ -215,7 +216,7 @@
                 <div class="tab-container">
                   <img src="img/icon-sol.png" alt="Icon Sol">
                   <span class="my-span">Clima local</span>
-                  <span>10/15ºC</span>
+                  <span class="my-span-2">10/15ºC</span>
                 </div>
               </td>
             </tr>
@@ -225,15 +226,15 @@
                 <div class="tab-container">
                   <img src="img/icon-email.png" alt="Icon Email">
                   <span class="my-span">Email</span>
-                  <span class="my-span span-color">hotelmaster@reservas.com.br</span>
+                  <span class="span-color">hotelmaster@reservas.com.br</span>
                 </div>
               </td>
 
               <td>
                 <div class="tab-container">
-                  <img src="img/icon-download.png" alt="Icon download">
+                  <img src="img/icon-download.svg" alt="Icon download">
                   <span class="my-span">PDF</span>
-                  <a class="span-link" href="#">Catálogo eletrônico do hotel</a>
+                  <a class="span-link" href="#">Catálogo eletrônico</a>
                 </div>
               </td>
             </tr>
@@ -257,7 +258,7 @@
       <div class="container grid-salas">
 
         <div class="sala-01">
-          <img src="img/sala-01.jpg" alt="Sala Master King">
+          <img class="img-salas" src="img/sala-01.jpg" alt="Sala Master King">
           <div class="sala-descricao">
             <h3 class="titulo-master">Master King</h3>
             <p class="paragrafo-master">Quarto e áreas de estar separados, mesa de trabalho espaçosa e assentos adicionais criam um ambiente convidativo e habilmente decorado.</p>
@@ -432,7 +433,7 @@
       </div>
 
       <h2 class="titulo-suites">Premier Suite</h2>
-      <div class="grid-salas-premier">
+      <div class="container grid-salas-premier">
         <div class="flex">
           <div class="sala-05">
             <img src="img/sala-03.jpg" alt="Sala Master King">
@@ -440,7 +441,7 @@
   
           <div class="sala-descricao-premier">
             <h3 class="titulo-master-premier">Master Junior Suite</h3>
-            <p class="paragrafo-master">Kravitz Design idealizado por Lenny Kravitz. Com quarto e áreas de estar separados, banheiro grande e comodidades atualizadas.</p>
+            <p class="paragrafo-master">Com quarto e áreas de estar separados, banheiro grande e comodidades atualizadas.</p>
             <p class="chamada-reserva">Ligue para reservar: 888.696.2121</p>
             <div class="sala-icones-premier">
               <ul class="ul-icones">
@@ -640,16 +641,15 @@
 <script>
     const config = {
       type: 'carousel',
-      gap: 40,
       perView: 4,
       breakpoints: {
-        1550: {
+        1400: {
           perView: 3
         },
-        1160: {
-          perView: 4
+        900: {
+          perView: 2
         },
-        599: {
+        600: {
           perView: 1
         }
       }

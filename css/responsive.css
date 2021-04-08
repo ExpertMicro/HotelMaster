@@ -1,0 +1,155 @@
+@media (max-width: 599px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+  .intro-historia {
+    margin-left: 40px;
+  }
+  .tab-container {
+    padding-right: 20px;
+  }
+  .tabela-intro {
+    font-size: 12px;
+  }
+  
+}
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) {
+  
+}
+
+
+@media (max-width: 1200px) {
+  .intro-imagem {
+    display: none;
+  }
+  .intro-historia {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1350px) and (min-width: 1200px) {
+  .my-span {
+    display: none;
+  }
+  .my-span-2 {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header-container .container .menu-nav li + li {
+    margin-left: 25px;
+  }
+  .main .intro-background .intro-title h1 {
+    font-size: 4em;
+    margin-right: 40px;
+    margin-top: 200px;
+  }
+
+  .grid-salas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .sala-descricao {
+    max-width: 596px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sala-descricao-premier {
+    max-width: 596px;
+  }
+}
+
+@media(max-width: 900px) {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .flex-intro {
+    flex-direction: column;
+  }
+  .header-container .container .menu-nav {
+    display: none;
+  }
+
+  .main .intro-background .intro-title h1 {
+    display: none;
+  }
+
+  .container-card-contato {
+    margin: 0 auto;
+  }
+
+  .buttom {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hash-instagram {
+    font-size: 36px;
+  }
+
+  .my-span {
+    display: none;
+  }
+  .my-span-2 {
+    margin-left: 10px;
+  }
+
+  .intro-historia {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+
+@media (max-width: 1160px) {
+  .my-footer {
+    flex-direction: column;
+  }
+  .endereco-footer {
+    margin-right: 0;
+    align-self: center;
+  }
+  .social-footer {
+    margin-top: 60px;
+    align-self: center;
+    margin-right: 0;
+  }
+  .footer-mapa-site {
+    margin-top: 60px;
+    justify-content: space-around;
+  }
+}

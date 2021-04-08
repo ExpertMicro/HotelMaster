@@ -381,6 +381,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 18px 24px !important;
   border-radius: 0px !important;
   background: #1B2728 !important;
+  border: none;
 }
 
 .intro-descricao .intro-imagem .glide__arrows {
@@ -435,6 +436,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .tab-container {
+  display: flex;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -453,6 +455,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .span-color {
   color: #A52C20;
+  margin-left: 10px;
 }
 
 .my-span {
@@ -530,7 +533,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .sala-descricao {
   background: #fff;
-  width: 596px;
 }
 
 .titulo-master {
@@ -678,9 +680,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .grid-salas-premier {
   max-width: 1222px;
-  display: grid;
   margin: 0 auto; 
-  grid-template-columns: 1fr;
   margin-top: 30px;
   padding-bottom: 200px;
 }
@@ -691,7 +691,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .sala-descricao-premier {
   display: block;
-  width: 626px;
   background: #fff;
 }
 
@@ -780,6 +779,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
 }
 
+.slide img {
+  width: 330px;
+  display: block;
+  max-width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.container-carousel .glide__arrow {
+  background: #1B2728;
+  border-radius: 0;
+  border: none;
+}
 
 /* Sessão Contato  */
 .chamada-contato {
